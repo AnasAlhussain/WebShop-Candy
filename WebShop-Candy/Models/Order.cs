@@ -7,7 +7,6 @@ namespace WebShop_Candy.Models
     {
 
         [Key]
-        [BindNever]
         public int OrderId { get; set; }
 
         [Required(ErrorMessage ="Please enter your first Name")]

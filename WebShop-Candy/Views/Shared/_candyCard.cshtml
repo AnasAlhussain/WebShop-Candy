@@ -19,7 +19,10 @@
         </div>
         <div class="addToCart">
             <p class="button">
-                <a class="btn btn-primary">
+                <a class="btn btn-primary" 
+                asp-controller="ShoppingCart" 
+                asp-action="AddToShoppingCart"
+                   asp-route-candyid="@Model.CandyId">Add To Cart
 
                 </a>
             </p>
