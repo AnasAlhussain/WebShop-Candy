@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using NuGet.Configuration;
 using WebShop_Candy.Models;
 using WebShop_Candy.Service;
 
 namespace WebShop_Candy.Controllers
 {
+    [Authorize]
     public class OrderController : Controller
     {
 
